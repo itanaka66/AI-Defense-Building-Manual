@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/claude
-for f in $(seq 1 30 | sed "s/^/vol/") omnibus omnibus_chu; do
+for f in $(seq 1 39 | sed "s/^/vol/") omnibus omnibus_chu omnibus_ko; do
   ./build.sh en/$f.md en/out/${f}_A4 a4 > en/out/logs_$f.a4 2>&1 || echo "FAIL $f a4"
   ./build.sh en/$f.md en/out/${f}_KDP_6x9 kdp > en/out/logs_$f.kdp 2>&1 || echo "FAIL $f kdp"
   sl=1; case $f in omnibus*) sl=2;; esac

@@ -53,3 +53,53 @@ Part titles:
 Terms: 中継API → relay API; 監査ログ → audit log; 読み取り位置 → read position (offset); 状態ファイル → state file; 隠しディレクトリ → hidden directory; 秘密の情報 → secrets; 相関検知 → correlation detection; 棚卸し → inventory; 待ち受け → listen; 疎通 → connectivity
 Notation line must include: (Only Japanese comments inside the code have been translated into English.)
 comments.json also holds diagram-line translations (vol16 C0) — text diagrams are not programs
+
+Volume 3 (後編 → Volume 3):
+31 Why the Collector Cannot Read After Log Switching, and the Fix
+32 Confirming an Actual Switch and Recovering Missing Events
+33 Monitoring the Collector's State with Prometheus
+34 Monitoring the Wazuh Platform's State with Prometheus
+35 Testing the Alert Rules and Checking in Production
+36 Checking PostgreSQL
+37 Backing Up PostgreSQL and Testing a Restore
+38 Using TrueNAS as the Backup Destination
+39 Registering the Destination and Preparing Scheduled Backups
+Terms: ログの切り替え → log switching (rotation); 欠けたイベント → missing events; 試験 → test; 発報 → fire; 世代 → generation; 保存先 → destination; 論理バックアップ → logical backup
+Program prompt strings (e.g. read -p "TrueNAS管理者ユーザー名: ") stay in Japanese. vol34 C0 diagram lines are in comments.json.
+
+## Part titles (Volumes 3–4, Parts 40–71)
+
+| Part | Japanese | English |
+|---|---|---|
+| 40 | PostgreSQLの論理バックアップを完成させる | Completing the PostgreSQL Logical Backup |
+| 41 | LXC 109のバックアップと隔離した復元の試験 | Backing Up LXC 109 and Testing an Isolated Restore |
+| 42 | バックアップの保護とTrueNASのスナップショット | Protecting the Backups and TrueNAS Snapshots |
+| 43 | 再起動のあとのバックアップ障害と復旧 | Backup Failures After a Reboot and the Recovery |
+| 44 | 復元したデータベースを本番と比べる | Comparing the Restored Databases with Production |
+| 45 | LLM分析の準備とWazuhの設定ファイルの修復 | Preparing for LLM Analysis and Repairing the Wazuh Configuration File |
+| 46 | アラートを分類しLLMに渡す項目を決める | Classifying Alerts and Deciding Which Fields to Pass to the LLM |
+| 47 | AI Defense Managerの既存の実装を調べる | Examining the Existing AI Defense Manager Implementation |
+| 48 | Wazuhのイベントの変換を7項目に絞る | Narrowing the Wazuh Event Conversion to Seven Fields |
+| 49 | Relayが返す項目を7つに絞る | Narrowing the Fields Returned by the Relay to Seven |
+| 50 | 新しいコードの反映とVM 230の固定のアドレス | Deploying the New Code and a Static Address for VM 230 |
+| 51 | VM 230からRelayへのTLSと認証を確かめる | Verifying TLS and Authentication from VM 230 to the Relay |
+| 52 | 実際のアラートを取りRelayの502を直す | Fetching Real Alerts and Fixing the Relay's 502 |
+| 53 | 分析から保存までの流れを点検する | Checking the Flow from Analysis to Storage |
+| 54 | LLMの出力の伏せ字と承認の方針 | Masking LLM Output and the Approval Policy |
+| 55 | 統合の点検と大量の要求への備え | Integration Checks and Preparing for High Request Volumes |
+| 56 | APIの認証の点検と設計 | Reviewing and Designing API Authentication |
+| 57 | APIのトークンによる認証を作る | Building Token Authentication for the API |
+| 58 | トークンの処理とCLIを強くする | Hardening Token Handling and the CLI |
+| 59 | APIの認証を本番に入れる | Putting API Authentication into Production |
+| 60 | エラーの応答とログから情報が漏れないようにする | Keeping Error Responses and Logs from Leaking Information |
+| 61 | ログの秘密の点検とjournalの容量の上限 | Checking Logs for Secrets and Capping the Journal Size |
+| 62 | ログの改ざんに備えるFSSの鍵を作る | Creating FSS Keys to Guard Against Log Tampering |
+| 63 | FSSの検証の鍵をProxmoxのホストに移す | Moving the FSS Verification Key to the Proxmox Host |
+| 64 | FSSの封印を動かして確かめる | Running and Checking FSS Sealing |
+| 65 | 別のホストでFSSを確かめる（VM 240） | Checking FSS from Another Host (VM 240) |
+| 66 | FSSの検証を15分ごとに自動で行う | Automating FSS Verification Every 15 Minutes |
+| 67 | Wazuhのローカルのルールの壊れを見つける | Finding the Breakage in Wazuh's Local Rules |
+| 68 | 直したルールを隔離した環境で確かめる | Testing the Fixed Rules in an Isolated Environment |
+| 69 | 直したルールを本番に入れる | Putting the Fixed Rules into Production |
+| 70 | AI防御のエージェントを作り始める | Starting to Build the AI Defense Agents |
+| 71 | 相関・統括・防御の判断のエージェント | Correlation, Orchestration and Defense Decision Agents |

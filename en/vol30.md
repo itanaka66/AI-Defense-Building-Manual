@@ -350,4 +350,4 @@ In Part 30 we made the Collector no longer stop at the hidden directory.
 | Applied | Restarted with `NRestarts=0`; saving to PostgreSQL also confirmed |
 | Hidden directory | Not deleted (the Collector no longer stops even though it remains) |
 
-In the original build, the work then moved on to checking the rotation method, such as whether Wazuh's log switching uses `copytruncate`, but the results are not within the records received (author's notes, item 30-B).
+Next, we check how Wazuh switches its logs (rotation). This continues in Part 31 of Volume 3.
